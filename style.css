@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(#000, #000000ea);
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    transition: all .1s;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    padding: 20px 0;
+    margin: 0 auto;
+    max-width: 1100px;
+    position: relative;
+}
+
+.my-logo{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 50px;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.name{
+    letter-spacing: 3px;
+    font-size: 65px;
+}
+
+.menu__item{
+    font-size: 25px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.menu__item-link:hover{
+    border-bottom: 3px solid aqua;
+    transition: all .1s;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav{
+    padding: 30px 20px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: #000000ea;
+    z-index: 100;
+}
+
+.about__text{
+    margin-top: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.skills{
+    margin-top: 200px;
+}
+
+.main__title{
+    font-size: 40px;
+    cursor: pointer;
+    transition: all .5s;
+    animation: animate 2s ease-in-out infinite;
+    padding-bottom: 40px;
+}
+
+@keyframes animate{
+    0%,100%{
+        letter-spacing: 0px;
+        color: #fff;
+    }
+    50%{
+        letter-spacing: 5px;
+        color: aqua;
+    }
+}
+
+.skills__item-title{
+    font-weight: 400;
+    color: #00ffff;
+}
+
+.skills__item-title span{
+    color: #fff;
+    font-weight: 400;
+}
+
+.skills__item{
+    display: flex;
+    width: 450px;
+    justify-content: space-between;
+}
+
+.level{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.level div{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.notactive{
+    background-color: #fff;
+}
+
+.active{
+    background-color: aqua;
+}
+
+.skills__items{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 50px 75px;
+}
+
+.projects{
+    padding-top: 200px;
+}
+
+.project{
+    position: relative;
+    width: 800px;
+}
+
+.project-img{
+    width: 800px;
+    border-radius: 20px;
+    filter: blur(3px);
+}
+
+.project__inner{
+    background-color: aqua;
+    opacity: 0.80;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border-radius: 20px;
+    padding: 50px;
+    text-align: right;
+}
+
+.project__subtitle{
+    margin-top: 70px;
+    color: blue;
+}
+
+.project__title{
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+.project__btn{
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    transition: .5s;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 10;
+    max-width: 100px;
+}
+
+.project__button{
+    overflow: hidden;  
+    position: relative;
+    padding: 10px 20px;
+    background-color: rgba(4, 4, 58, 0.861);
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.hover{
+    position: absolute;
+    display: flex;
+    background-color: #03e9f4;
+    width: 150%;
+    height: 100%;
+    transform: translateX(-350px) skew(-50deg);
+    transition: all .5s;
+}
+
+.project__button:hover .hover{
+    transform: translateX(0) skew(-40deg);
+}
+
+.project__button:hover .project__btn{
+    color: darkblue;
+}
+
+.project__button:hover{
+    border: 1px solid darkblue;
+}
+
+.btn{
+    margin-top: 30px;
+    width: 150px;
+    display: inline-block;
+}
+
+.projects{
+    position: relative;
+}
+
+.languages{
+    padding-top: 200px;
+}
+
+.language{
+    display: flex;
+    align-items: center;
+}
+
+.language__item h3{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.language__item span{
+    color: #00ffff;
+    font-size: 20px;
+}
+
+.angle-right{
+    margin-right: 10px;
+}
+
+.languages__items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.language__item{
+    text-align: right;
+}
+
+footer{
+    margin-top: 100px;
+    padding: 50px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.date{
+    font-weight: 400;
+}
+
+.github{
+    display: flex;
+    align-items: center;
+}
+
+.github__link{
+    font-size: 25px;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+}
+
+.rsschool:hover path{
+    fill: aqua;
+}
