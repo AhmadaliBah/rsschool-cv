@@ -4,4 +4,4 @@
 4. Javascript, React, Css, Html, Typescript, Sccs.
 5. [Code examples](https://github.com/AhmadaliBah).
 6. Data Learning Center, Rsshool.
-7. My English is at intermediate level
+7. My English is at intermediate level.
